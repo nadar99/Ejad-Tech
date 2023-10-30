@@ -6,14 +6,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-12 17:47+0000\n"
-"PO-Revision-Date: 2023-09-12 17:47+0000\n"
+"POT-Creation-Date: 2023-10-30 12:57+0000\n"
+"PO-Revision-Date: 2023-10-30 12:57+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
+
+#. module: openacademy
+#. odoo-python
+#: code:addons/openacademy/models/session.py:0
+#, python-format
+msgid "A session's instructor cannot be an attendee"
+msgstr "المحاضر لا يمكن ان يكون من الحضور"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__active
@@ -27,10 +34,15 @@ msgid "Add Attendees"
 msgstr "أضافة حضور"
 
 #. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.course_form_view
+msgid "Add Session"
+msgstr "اضافة درس"
+
+#. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_res_partner__session_ids
 #: model:ir.model.fields,field_description:openacademy.field_res_users__session_ids
 msgid "Attended Sessions"
-msgstr "حصص تم حضورها"
+msgstr "الدروس التي تم حضورها"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__attendee_ids
@@ -47,11 +59,6 @@ msgstr "عدد الحضور"
 #: model:ir.ui.menu,name:openacademy.configuration_menu
 msgid "Configuration"
 msgstr "إعدادات"
-
-#. module: openacademy
-#: model:ir.model,name:openacademy.model_res_partner
-msgid "Contact"
-msgstr "جهة الاتصال"
 
 #. module: openacademy
 #: model:ir.actions.act_window,name:openacademy.contact_list_action
@@ -81,9 +88,14 @@ msgid "Courses"
 msgstr "الدروس"
 
 #. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.course_form_view
+msgid "Create New Course"
+msgstr "اضافة درس جديد"
+
+#. module: openacademy
 #: model_terms:ir.actions.act_window,help:openacademy.course_list_action
 msgid "Create The First Course"
-msgstr "انشاء أول درس"
+msgstr "انشاء اول درس"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_course__create_uid
@@ -100,9 +112,25 @@ msgid "Created on"
 msgstr "تاريخ الإنشاء"
 
 #. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.course_form_view
+msgid "Delete All Sessions"
+msgstr "حذف كل الحصص"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.course_form_view
+msgid "Delete Course"
+msgstr "حذف الدرس"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.course_form_view
+msgid "Delete Session"
+msgstr "حذف الحصة"
+
+#. module: openacademy
+#: model:ir.model,name:openacademy.model_res_partner
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_course__description
 msgid "Description"
-msgstr "وصف الدرس"
+msgstr "جهة الاتصال"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_course__display_name
@@ -119,7 +147,12 @@ msgstr "المدة"
 #. module: openacademy
 #: model:ir.model.fields,help:openacademy.field_openacademy_session__duration
 msgid "Duration in days"
-msgstr "المدة بالأيام"
+msgstr "المدة بالايام"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.course_form_view
+msgid "Edit Sessions"
+msgstr "تعديل الحصص"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__end_date
@@ -132,16 +165,25 @@ msgid "General"
 msgstr "عام"
 
 #. module: openacademy
-#: model_terms:ir.ui.view,arch_db:openacademy.course_search_view
-msgid "Group By"
-msgstr "جمع ب"
-
-#. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_course__id
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__id
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__id
 msgid "ID"
-msgstr "رقم تعريفي"
+msgstr "الرقم التعريفي"
+
+#. module: openacademy
+#. odoo-python
+#: code:addons/openacademy/models/session.py:0
+#, python-format
+msgid "Incorrect 'seats' value"
+msgstr "رقم المقاعد غير صحيح"
+
+#. module: openacademy
+#. odoo-python
+#: code:addons/openacademy/models/session.py:0
+#, python-format
+msgid "Increase seats or remove attendees"
+msgstr "اضف عدد المقاعد أو احذف من الحاضرين"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__instructor_id
@@ -169,12 +211,12 @@ msgstr "تم التحديث من قبل"
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__write_date
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__write_date
 msgid "Last Updated on"
-msgstr "تاريخ اخر تحديث"
+msgstr ""تاريخ اخر تحديث"
 
 #. module: openacademy
-#: model_terms:ir.ui.view,arch_db:openacademy.course_search_view
-msgid "My Courses"
-msgstr "دروسي"
+#: model_terms:ir.ui.view,arch_db:openacademy.course_form_view
+msgid "Link Session"
+msgstr ""
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__name
@@ -214,13 +256,7 @@ msgid "Participation by Courses"
 msgstr "الحضور بالحصص"
 
 #. module: openacademy
-#: model_terms:ir.ui.view,arch_db:openacademy.course_form_view
-msgid "Registered Sessions"
-msgstr "الحصص المسجلة"
-
-#. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_course__responsible_id
-#: model_terms:ir.ui.view,arch_db:openacademy.course_search_view
 msgid "Responsible"
 msgstr "المسؤول"
 
@@ -270,19 +306,33 @@ msgid "The Course Title must be unique"
 msgstr "عنوان الدرس يجب ان يكون مميز"
 
 #. module: openacademy
-#: model:ir.model.constraint,message:openacademy.constraint_openacademy_course_name_description_check
-msgid "The Course Title should not be the description"
-msgstr "عنوان الدرس يجب أن لا يكون هو الوصف"
+#. odoo-python
+#: code:addons/openacademy/models/session.py:0
+#, python-format
+msgid "The number of available seats may not be negative"
+msgstr "عدد المقاعد لا يمكن ان يكون سالبا"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_course__name
 msgid "Title"
-msgstr "عنوان"
+msgstr "العنوان"
+
+#. module: openacademy
+#: model_terms:ir.ui.view,arch_db:openacademy.course_form_view
+msgid "Unlink Session"
+msgstr ""
 
 #. module: openacademy
 #: model:ir.model,name:openacademy.model_openacademy_wizard
 msgid "Wizard: quick registration of attendees to sessions"
 msgstr ""
+
+#. module: openacademy
+#. odoo-python
+#: code:addons/openacademy/models/course.py:0
+#, python-format
+msgid "You cannot delete a course with sessions"
+msgstr "لا يمكنك حذف درس له حصص"
 
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.wizard_form_view
@@ -292,7 +342,7 @@ msgstr "الغاء"
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.course_form_view
 msgid "course form"
-msgstr "قائمد الدرس"
+msgstr "قائمة الدرس"
 
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.course_form_view
@@ -308,3 +358,10 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:openacademy.session_form_view
 msgid "session form"
 msgstr "قائمة الحصة"
+
+#. module: openacademy
+#. odoo-python
+#: code:addons/openacademy/models/session.py:0
+#, python-format
+msgid "too many attendees"
+msgstr "عدد كبير من الحاضرين"

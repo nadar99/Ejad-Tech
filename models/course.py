@@ -22,11 +22,11 @@ class Course(models.Model):
     #      'UNIQUE(name)',
     #      'The Course Title must be unique')
     # ]
-    _sql_constraints = [
-        ('name_unique',
-         'check(1=1)',
-         'The Course Title must be unique')
-    ]
+    # _sql_constraints = [
+    #     ('name_unique',
+    #      'check(1=1)',
+    #      'The Course Title must be unique')
+    # ]
     @api.constrains('session_ids')
     def validate_instructor(self):
         instructors = []
@@ -103,5 +103,5 @@ class Course(models.Model):
     def _unlink_except_has_sessions(self):
         for rec in self:
             if rec.session_ids:
-                raise exceptions.ValidationError("You cannot delete a course with sessions")
+                raise exceptions.ValidationError(_("You cannot delete a course with sessions"))
 
