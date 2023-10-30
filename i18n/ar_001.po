@@ -30,18 +30,18 @@ msgstr "أضافة حضور"
 #: model:ir.model.fields,field_description:openacademy.field_res_partner__session_ids
 #: model:ir.model.fields,field_description:openacademy.field_res_users__session_ids
 msgid "Attended Sessions"
-msgstr ""
+msgstr "حصص تم حضورها"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__attendee_ids
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__attendee_ids
 msgid "Attendees"
-msgstr ""
+msgstr "الحضور"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__attendees_count
 msgid "Attendees Count"
-msgstr ""
+msgstr "عدد الحضور"
 
 #. module: openacademy
 #: model:ir.ui.menu,name:openacademy.configuration_menu
@@ -83,21 +83,21 @@ msgstr "الدروس"
 #. module: openacademy
 #: model_terms:ir.actions.act_window,help:openacademy.course_list_action
 msgid "Create The First Course"
-msgstr ""
+msgstr "انشاء أول درس"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_course__create_uid
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__create_uid
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "الانشاء من قبل"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_course__create_date
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__create_date
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__create_date
 msgid "Created on"
-msgstr ""
+msgstr "تاريخ الإنشاء"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_course__description
@@ -109,7 +109,7 @@ msgstr "وصف الدرس"
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__display_name
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "اسم العرض"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__duration
@@ -119,29 +119,29 @@ msgstr "المدة"
 #. module: openacademy
 #: model:ir.model.fields,help:openacademy.field_openacademy_session__duration
 msgid "Duration in days"
-msgstr ""
+msgstr "المدة بالأيام"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__end_date
 msgid "End Date"
-msgstr ""
+msgstr "تاريخ الانتهاء"
 
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.session_form_view
 msgid "General"
-msgstr ""
+msgstr "عام"
 
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.course_search_view
 msgid "Group By"
-msgstr ""
+msgstr "جمع ب"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_course__id
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__id
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__id
 msgid "ID"
-msgstr ""
+msgstr "رقم تعريفي"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__instructor_id
@@ -155,21 +155,21 @@ msgstr "المحاضر"
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session____last_update
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "تاريخ اخر تعديل"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_course__write_uid
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__write_uid
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "تم التحديث من قبل"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_course__write_date
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__write_date
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "تاريخ اخر تحديث"
 
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.course_search_view
@@ -195,28 +195,28 @@ msgstr "الأكاديمية المفتوحة"
 #. module: openacademy
 #: model:ir.model,name:openacademy.model_openacademy_course
 msgid "Open Academy Courses"
-msgstr ""
+msgstr "دروس الأكاديمية المفتوحة"
 
 #. module: openacademy
 #: model:ir.model,name:openacademy.model_openacademy_session
 msgid "Open Academy Session"
-msgstr ""
+msgstr "حصص الأكاديمية المفتوحة"
 
 #. module: openacademy
 #: model:res.groups,name:openacademy.group_manager
 msgid "OpenAcademy / Manager"
-msgstr ""
+msgstr "الأكاديمية المفتوحة \ المدير"
 
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.session_graph_view
 #: model_terms:ir.ui.view,arch_db:openacademy.session_pivot_view
 msgid "Participation by Courses"
-msgstr ""
+msgstr "الحضور بالحصص"
 
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.course_form_view
 msgid "Registered Sessions"
-msgstr ""
+msgstr "الحصص المسجلة"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_course__responsible_id
@@ -227,7 +227,7 @@ msgstr "المسؤول"
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.session_form_view
 msgid "Schedule"
-msgstr ""
+msgstr "الجدول"
 
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.session_tree_view
@@ -252,12 +252,12 @@ msgstr "الحصص"
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__start_date
 msgid "Start Date"
-msgstr ""
+msgstr "تاريخ البدء"
 
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.wizard_form_view
 msgid "Subscribe"
-msgstr ""
+msgstr "اشتراك"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session__taken_seats
@@ -267,12 +267,12 @@ msgstr "المقاعد المشغولة"
 #. module: openacademy
 #: model:ir.model.constraint,message:openacademy.constraint_openacademy_course_name_unique
 msgid "The Course Title must be unique"
-msgstr ""
+msgstr "عنوان الدرس يجب ان يكون مميز"
 
 #. module: openacademy
 #: model:ir.model.constraint,message:openacademy.constraint_openacademy_course_name_description_check
 msgid "The Course Title should not be the description"
-msgstr ""
+msgstr "عنوان الدرس يجب أن لا يكون هو الوصف"
 
 #. module: openacademy
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_course__name
@@ -287,12 +287,12 @@ msgstr ""
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.wizard_form_view
 msgid "cancel"
-msgstr ""
+msgstr "الغاء"
 
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.course_form_view
 msgid "course form"
-msgstr ""
+msgstr "قائمد الدرس"
 
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.course_form_view
@@ -307,4 +307,4 @@ msgstr ""
 #. module: openacademy
 #: model_terms:ir.ui.view,arch_db:openacademy.session_form_view
 msgid "session form"
-msgstr ""
+msgstr "قائمة الحصة"
