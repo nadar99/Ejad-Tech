@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<!--Course View-->
+    <record model="ir.ui.view" id="course_tree_view">
+        <field name="name">course.tree</field>
+        <field name="model">openacademy.course</field>
+        <field name="arch" type="xml">
+           <tree string="Course Tree">
+                <field name="name"/>
+                <field name="description"/>
+               <field name="responsible_id"/>
+           </tree>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="course_form_view">
+        <field name="name">course.form</field>
+        <field name="model">openacademy.course</field>
+        <field name="arch" type="xml">
+            <form string="course form">
+                <button name="create_new_course" type="object" string="Create New Course"/>
+                <button name="add_session" type="object" string="Add Session"/>
+                <button name="edit_all_sessions" type="object" string="Edit Sessions"/>
+                <button name="delete_session" type="object" string="Delete Session"/>
+                <button name="unlink_session" type="object" string="Unlink Session"/>
+                <button name="link_session" type="object" string="Link Session"/>
+                <button name="delete_all_sessions" type="object" string="Delete All Sessions"/>
+                <button name="delete_course" type="object" string="Delete Course"/>
+
+               <sheet>
+                   <group>
+                       <field name="name"/>
+                       <field name="responsible_id"/>
+                   </group>
+                   <notebook>
+                        <page string="Sessions">
+                            <field name="session_ids">
+                                <tree editable="top">
+                                    <field name="name"/>
+                                    <field name="instructor_id"/>
+                                </tree>
+                            </field>
+                       </page>
+                       <page string="description">
+                            <field name="description"/>
+                       </page>
+
+                   </notebook>
+               </sheet>
+            </form>
+        </field>
+    </record>
+    <record model="ir.ui.view" id="course_search_view">
+        <field name="name">course.search</field>
+        <field name="model">openacademy.course</field>
+        <field name="arch" type="xml">
+           <search string="Course search">
+                <field name="name"/>
+                <field name="description"/>
+<!--               <filter name="my_courses" string="My Courses"-->
+<!--               domain="[('responsible_id', '=', uid)]"/>-->
+
+<!--               <group string="Group By">-->
+<!--                    <filter name="by_responsible" string="Responsible"-->
+<!--                    context="{'group_by': 'responsible_id'}"/>-->
+<!--               </group>-->
+           </search>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="course_list_action">
+        <field name="name">Course</field>
+        <field name="res_model">openacademy.course</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context" eval="{'search_default_my_courses': 1}"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face"> Create The First Course</p>
+        </field>
+    </record>
+
+    <!--Top level menu: no parent-->
+    <menuitem id="main_openacademy_menu" name="Open Academy"/>
+    <!-- A first level int the left side menu is needed
+    before using action= attribute-->
+    <menuitem id="openacademy_menu" parent="main_openacademy_menu"
+              name="Open Academy" />
+    <!--    the following menu item should appear after
+     its parent openacademy_menu and after its action course_list_action
+     -->
+    <menuitem id="courses_menu" parent="openacademy_menu" name="Courses"
+              action="course_list_action"/>
+
+</odoo>

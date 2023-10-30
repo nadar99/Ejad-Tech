@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+
+<!--          <record id="course0" model="openacademy.course">-->
+<!--            <field name="title">Course 0</field>-->
+<!--            <field name="description"> Course 0 description-->
+<!--            can have multiple lines-->
+<!--            </field>-->
+<!--          </record>-->
+
+<!--         <record id="course1" model="openacademy.course">-->
+<!--            <field name="title">Course 1</field>-->
+<!--          </record>-->
+
+<!--         <record id="course2" model="openacademy.course">-->
+<!--            <field name="title">Course 2</field>-->
+<!--            <field name="value">Course 2 description</field>-->
+<!--          </record>-->
+
+    </data>
+</odoo>
